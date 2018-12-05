@@ -3,6 +3,6 @@ import { prependOnceListener } from 'cluster';
 const layout=()=>(
     <div>Toolbar, Sidebar, Backdrop</div>
     <main>
-    {props.children}    
+    {props.children}        
     </main>
 );
