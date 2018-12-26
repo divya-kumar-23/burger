@@ -1,5 +1,6 @@
 import React from 'react';
 import Auxiliary from '../../../hoc/Auxiliary';
+import Button from '../../UI/Button/Button';
 
 export default function OrderSummary(props) {
     const ingredientSummary=Object.keys(props.ingredients)
@@ -14,6 +15,8 @@ export default function OrderSummary(props) {
           {ingredientSummary}
       </ul>
       <p>Continue  to cheeckout?</p>
+      <Button btnType="Danger" clicked={props.purchaseCancelled}>CANCEL</Button>
+      <Button btnType="Success" clicked={props.purchaseContinued}>CONTINUE</Button>
     </Auxiliary>
   )
 }
